@@ -7,7 +7,7 @@ This project, named StackCraft, is a compiler development adventure where the go
 
 ### Project Structure
 
-└─$ tree
+```bash
 .
 ├── bin
 ├── lexyacc-code
@@ -29,23 +29,23 @@ This project, named StackCraft, is a compiler development adventure where the go
 │   └── temp.c
 └── x86-64-driver.sh
 
-Run this command with the input .calc file which is a calc program. This tool generates assembly language for the respective input code but only some operators and functions mentioned in the calc3i.b file can execute. Check the `calc3i.c` before you input.
+```
 
 
-First make sure you run the following command to create all the executible files neccessary for the shell script to run
+First, make sure you run the following command to create all the executable files necessary for the shell script to run
 
 ```bash
 make
 ```
 
 
-Run the following command to generate the assembly language for the calc file and also run the output of the calc file. I have taken `fact.calc`.
+Run this command with the input .calc file which is a calc program. This tool generates assembly language for the respective input code but only some operators and functions mentioned in the `calc3i.b` file can execute. Check the `calc3i.c` before you input. I have taken `fact.calc`.
 
 ``` bash
 ./x86-64-driver.sh ./testprogs/fact.calc
 ```
 
-Fact.calc looks something like this 
+`fact.calc` looks something like this 
 
 ```input calc
 print fact 0;
@@ -65,7 +65,7 @@ print fact 11;
 Assembly code generated for this `.calc` file will be stored in `bin/fact.s`
 
 
-## Referebces Used
+## References Used
 
 - [Programming from the Ground Up Book](http://savannah.nongnu.org/projects/pgubook) by Jonathan Bartlett
 - [x86-64 Assembly Language Programming with Ubuntu](http://www.egr.unlv.edu/~ed/x86.html) by Ed Jorgensen

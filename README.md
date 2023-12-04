@@ -32,7 +32,13 @@ This project, named StackCraft, is a compiler development adventure where the go
 ```
 
 
-First, make sure you run the following command to create all the executable files necessary for the shell script to run
+Follow these steps to build and run the project:
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Run `make` to build the compiler and external library.
+4. Execute `x86-64-driver.sh` with the desired `.calc` file to generate and compile the x86-64 assembly code.
+
 
 ```bash
 make

@@ -1,0 +1,19 @@
+a=732;
+b=2684;
+print a;
+while(a != b) {
+  if(a > b) {
+    a=a-b;
+  } else {
+    b=b-a;
+  }
+}
+print a;
+
+a = 732;
+print a;
+
+print b; 
+
+print 100 gcd 5;
+
